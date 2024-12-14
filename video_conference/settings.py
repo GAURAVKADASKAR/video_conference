@@ -12,7 +12,6 @@ https://docs.djangoproject.com/en/5.1/ref/settings/
 
 from pathlib import Path
 import dj_database_url
-from decouple import config
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -23,12 +22,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = config("SECRET_KEY")
+SECRET_KEY = 'django-insecure-g-_u8mu2(j-()hnil6x1=$dp=nmmoqe^@l2ta_=gsx7(mktb9c'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = config("DEBUG")
+DEBUG = True
 
-ALLOWED_HOSTS = ["*"]
+ALLOWED_HOSTS = []
 
 import os
 
@@ -85,7 +84,7 @@ DATABASES = {
     }
 }
 
-DATABASES['default']=dj_database_url.parse(config("DATABSE_URL"))
+DATABASES['default']=dj_database_url.parse("postgresql://video_call_user:xc8TNZQ9ZJ52ugh5tx6e46ev52CuATwl@dpg-ctep5h5ds78s73die6hg-a.oregon-postgres.render.com/video_call")
 
 
 # Password validation
