@@ -84,7 +84,7 @@ DATABASES = {
     }
 }
 
-DATABASES['default']=dj_database_url.parse("postgresql://video_call_user:xc8TNZQ9ZJ52ugh5tx6e46ev52CuATwl@dpg-ctep5h5ds78s73die6hg-a.oregon-postgres.render.com/video_call")
+# DATABASES['default']=dj_database_url.parse("postgresql://video_call_user:xc8TNZQ9ZJ52ugh5tx6e46ev52CuATwl@dpg-ctep5h5ds78s73die6hg-a.oregon-postgres.render.com/video_call")
 
 
 # Password validation
